@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: red;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle" onclick="incrementCounter()"></div>
+  <p>Количество кликов: <span id="counter">0</span></p>
+
+  <script>
+    var counter = 0;
+
+    function incrementCounter() {
+      counter++;
+      document.getElementById("counter").textContent = counter;
+    }
+  </script>
+</body>
+</html>
